@@ -1,1 +1,242 @@
-# nnoyonsarder
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noyon Sarder Diamond Topup</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #1f1c2c, #928dab);
+        color: white;
+        text-align: center;
+    }
+
+    .header {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .ns-logo {
+        font-size: 50px;
+        font-weight: bold;
+        color: #ffcc00;
+        background: linear-gradient(45deg, #ff6f61, #ffcc00);
+        display: inline-block;
+        padding: 10px 25px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 10px 0;
+    }
+
+    select {
+        padding: 10px 15px;
+        font-size: 16px;
+        border-radius: 10px;
+        margin: 20px 0;
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+
+    .btn {
+        display: block;
+        width: 280px;
+        margin: 12px auto;
+        padding: 15px;
+        font-size: 16px;
+        background: gold;
+        color: black;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: bold;
+        transition: 0.3s;
+        line-height: 1.4;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+    }
+
+    .ns-panel-btn {
+        background: #1abc9c;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .telegram-btn {
+        background: #3498db;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .youtube-btn {
+        background: #FF0000;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .help-btn {
+        background: #27ae60;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .tap-topup-card {
+        background: rgba(255, 215, 0, 0.1);
+        padding: 25px;
+        border-radius: 20px;
+        width: 320px;
+        margin: 0 auto 30px auto;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .card {
+        background: rgba(255,255,255,0.1);
+        padding: 15px;
+        border-radius: 15px;
+        margin: 10px auto;
+        width: 280px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        background: rgba(255,255,255,0.2);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    footer {
+        margin-top: 60px;
+        font-size: 14px;
+        opacity: 0.8;
+        padding-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <!-- NS Logo -->
+    <div class="ns-logo">NS</div>
+
+    <!-- Country Select Card -->
+    <div class="tap-topup-card">
+        <select id="countrySelect" onchange="showLinks()">
+            <option value="">-- Country Select করুন --</option>
+            <option value="bd">Bangladesh 🇧🇩</option>
+            <option value="in">India 🇮🇳</option>
+            <option value="cn">China 🇨🇳</option>
+            <option value="np">Nepal 🇳🇵</option>
+            <option value="gl">Global 🌐</option>
+        </select>
+    </div>
+
+    <!-- Header Title -->
+    <h1>🔥 Noyon Sarder 🔥</h1>
+
+    <!-- NS Panel Button -->
+    <a class="btn ns-panel-btn" href="#" target="_blank">⚡ NS Panel</a>
+
+    <!-- Telegram Channel Button -->
+    <a class="btn telegram-btn" href="https://t.me/Hackernoyon" target="_blank">📢 Telegram Channel</a>
+
+    <!-- YouTube Channel Button -->
+    <a class="btn youtube-btn" href="https://www.youtube.com/@YourChannel" target="_blank">▶ YouTube Channel</a>
+
+    <!-- হারানো ID / হেল্প বাটন -->
+    <a class="btn help-btn" href="mailto:nnoyonsarder@gmail.com?subject=Help%20Request&body=Please%20contact%20me%20regarding%20Diamond%20Topup." target="_blank">
+    🆘 হারানো ID Back / কোনো হেল্পের জন্য যোগাযোগ করুন  
+    📞 +8801300222607 | ✉ nnoyonsarder@gmail.com
+    </a>
+</div>
+
+<!-- Bangladesh Links -->
+<div id="bdLinks" class="hidden">
+    <h2>🇧🇩 Bangladesh Topup Websites</h2>
+    <div class="card"><a class="btn" href="https://shop2game.com" target="_blank">💎 Shop2Game (Official Garena)</a></div>
+    <div class="card"><a class="btn" href="https://www.codashop.com/bd" target="_blank">💎 Codashop Bangladesh</a></div>
+    <div class="card"><a class="btn" href="https://www.seagm.com" target="_blank">💎 SEAGM</a></div>
+    <div class="card"><a class="btn" href="https://dundle.com" target="_blank">💎 Dundle Gift Cards</a></div>
+    <div class="card"><a class="btn" href="https://www.bkash.com" target="_blank">💰 bKash Topup</a></div>
+    <div class="card"><a class="btn" href="https://nagad.com.bd" target="_blank">💰 Nagad Topup</a></div>
+</div>
+
+<!-- India Links -->
+<div id="inLinks" class="hidden">
+    <h2>🇮🇳 India Topup Websites</h2>
+    <div class="card"><a class="btn" href="https://www.codashop.com/en-in" target="_blank">💎 Codashop India</a></div>
+    <div class="card"><a class="btn" href="https://paytm.com" target="_blank">💰 Paytm</a></div>
+    <div class="card"><a class="btn" href="https://www.amazon.in" target="_blank">💎 Amazon India</a></div>
+    <div class="card"><a class="btn" href="https://www.mobikwik.com" target="_blank">💰 MobiKwik</a></div>
+    <div class="card"><a class="btn" href="https://shop2game.com" target="_blank">💎 Shop2Game (Official India)</a></div>
+</div>
+
+<!-- China Links -->
+<div id="cnLinks" class="hidden">
+    <h2>🇨🇳 China Topup Websites</h2>
+    <div class="card"><a class="btn" href="https://www.codashop.com/zh-cn" target="_blank">💎 Codashop China</a></div>
+    <div class="card"><a class="btn" href="https://www.seagm.com" target="_blank">💎 SEAGM China</a></div>
+    <div class="card"><a class="btn" href="https://www.tencent.com/en-us/games" target="_blank">💎 Tencent Games Topup</a></div>
+</div>
+
+<!-- Nepal Links -->
+<div id="npLinks" class="hidden">
+    <h2>🇳🇵 Nepal Topup Websites</h2>
+    <div class="card"><a class="btn" href="https://www.codashop.com/en-np" target="_blank">💎 Codashop Nepal</a></div>
+    <div class="card"><a class="btn" href="https://www.seagm.com" target="_blank">💎 SEAGM Nepal</a></div>
+    <div class="card"><a class="btn" href="https://esewa.com.np" target="_blank">💰 eSewa Topup</a></div>
+    <div class="card"><a class="btn" href="https://khalti.com" target="_blank">💰 Khalti Topup</a></div>
+</div>
+
+<!-- Global Links -->
+<div id="glLinks" class="hidden">
+    <h2>🌐 Global Topup Websites</h2>
+    <div class="card"><a class="btn" href="https://www.codashop.com" target="_blank">💎 Codashop Global</a></div>
+    <div class="card"><a class="btn" href="https://www.seagm.com" target="_blank">💎 SEAGM Global</a></div>
+    <div class="card"><a class="btn" href="https://www.shop2game.com" target="_blank">💎 Shop2Game Global</a></div>
+    <div class="card"><a class="btn" href="https://www.razer.com/razer-gold" target="_blank">💰 Razer Gold</a></div>
+    <div class="card"><a class="btn" href="https://www.mol.com/en/mopoints" target="_blank">💰 MOLPoints</a></div>
+    <div class="card"><a class="btn" href="https://www.paypal.com" target="_blank">💰 PayPal</a></div>
+    <div class="card"><a class="btn" href="https://www.amazon.com/gift-cards" target="_blank">💎 Amazon Gift Card</a></div>
+    <div class="card"><a class="btn" href="https://play.google.com/store" target="_blank">💎 Google Play</a></div>
+</div>
+
+<footer>
+    © 2026 Noyon Sarder | All Rights Reserved
+</footer>
+
+<script>
+function showLinks() {
+    var country = document.getElementById('countrySelect').value;
+    document.getElementById('bdLinks').classList.add('hidden');
+    document.getElementById('inLinks').classList.add('hidden');
+    document.getElementById('cnLinks').classList.add('hidden');
+    document.getElementById('npLinks').classList.add('hidden');
+    document.getElementById('glLinks').classList.add('hidden');
+
+    if(country === 'bd') {
+        document.getElementById('bdLinks').classList.remove('hidden');
+    } else if(country === 'in') {
+        document.getElementById('inLinks').classList.remove('hidden');
+    } else if(country === 'cn') {
+        document.getElementById('cnLinks').classList.remove('hidden');
+    } else if(country === 'np') {
+        document.getElementById('npLinks').classList.remove('hidden');
+    } else if(country === 'gl') {
+        document.getElementById('glLinks').classList.remove('hidden');
+    }
+}
+</script>
+
+</body>
+</html>
